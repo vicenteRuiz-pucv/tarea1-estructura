@@ -37,14 +37,12 @@ Este programa tiene 7 funcionalidades
 
 Probablemente hayan errores de manejo de casos.. por no considerar situaciones excepcionales fuera del comportamiento nornal.
 
-EJEMPLO DE USO:
 ### Ejemplo de flujo lógico:
 
-1. **Estado inicial:** Categorías: ["Hogar"]. Pendientes: (vacío).
-2. **Acción:** Usuario crea categoría "Oficina".
-3. **Acción:** Usuario agrega "Lavar platos" (Hogar) a las 10:00.
-4. **Acción:** Usuario agrega "Enviar mail" (Oficina) a las 10:05.
+1. **Estado inicial:** Categorías: ["vacio"]. Pendientes: (vacío).
+2. **Acción:** Usuario crea categoría "Escuela".
+3. **Acción:** Usuario agrega "Hacer la tarea" (Escuela) a las 10:00.
+4. **Acción:** Usuario usa **"Eliminar Categoría: Hogar"**.
+    - *Resultado:* La categoría "Hogar" desaparece y la tarea "Hacer la tarea" se borra.
 5. **Acción:** Usuario usa **"Eliminar Categoría: Hogar"**.
-    - *Resultado:* La categoría "Hogar" desaparece y la tarea "Lavar platos" se borra.
-6. **Acción:** "Atender Siguiente".
-    - *Resultado:* Se muestra "Enviar mail" (ya que ahora es la más antigua y única disponible).
+    -Se muestra que la lista de categorias esta vacía!       
